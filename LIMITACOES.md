@@ -4,7 +4,7 @@
 
 - **Integração com Moodle/AVA:** não realizada (diferencial opcional, conforme o documento).
 - **Cadastro, edição e exclusão de cursos:** não desenvolvidos, pois não eram exigidos.
-- **Login e "Área do aluno":** o link da navegação é apenas visual e leva a uma seção informativa.
+- **Login e "Área do aluno":** o botão "Área do aluno" abre em nova aba o login do portal https://portaleduca.sesisp.org.br; não há autenticação própria.
 - **Migrations formais:** o esquema é criado no início da aplicação e o script equivalente está em `Database/courses.sql`.
 - **Publicação e repositório:** repositório em https://github.com/vitorpilao/SESI-SENAI e aplicação em https://sesi-senai.onrender.com/. No plano gratuito do Render o serviço hiberna e a primeira requisição pode demorar.
 - **Hospedagem gratuita:** pode hibernar após inatividade e o disco é temporário; o banco é recriado com a carga inicial a cada início.
