@@ -137,7 +137,14 @@ Há seis cursos fictícios, cinco categorias, três modalidades e três status, 
 
 ## Publicação
 
-A aplicação é autocontida: publicar a pasta do projeto em uma hospedagem gratuita que ofereça execução de ASP.NET Core/.NET 10 e armazenamento persistente para `App_Data/courses.db`. Configure `ASPNETCORE_URLS` conforme a plataforma e mantenha a pasta de dados gravável. A disponibilidade de hospedagem gratuita para .NET e seu armazenamento persistente depende do provedor e de seus limites; confirme essas condições antes de publicar.
+A aplicação é autocontida (front-end, API e SQLite no mesmo serviço) e inclui `Dockerfile`. O GitHub Pages não serve, pois não executa ASP.NET. Passos para o plano gratuito do Render:
+
+1. Envie o projeto a um repositório do GitHub.
+2. No Render, crie **New → Web Service**, conecte o repositório e escolha **Runtime: Docker** e o plano **Free**.
+3. Faça o deploy. O Dockerfile usa a porta da variável `PORT` definida pela plataforma.
+4. Use a URL `https://<nome>.onrender.com` como link da aplicação publicada.
+
+O disco do plano gratuito é temporário: o banco `App_Data/courses.db` é recriado com a carga inicial a cada início, o que preserva os dados fictícios. No plano gratuito, o serviço hiberna após inatividade e a primeira requisição pode demorar. A disponibilidade e os limites dependem do provedor; confirme-os antes de publicar.
 
 Não há link de repositório nem de aplicação publicada nesta entrega. O SDK .NET 10 foi instalado neste ambiente, o build foi validado sem avisos e os endpoints principais passaram em testes HTTP locais. A publicação ainda precisa ser executada em uma plataforma escolhida.
 

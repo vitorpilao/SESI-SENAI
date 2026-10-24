@@ -1,0 +1,9 @@
+bin/
+obj/
+App_Data/
+.git/
+.vs/
+.vscode/
+Documentos/
+Arquivos_Atividade*/
+*.zip
