@@ -146,9 +146,21 @@ A aplicação é autocontida (front-end, API e SQLite no mesmo serviço) e inclu
 
 O disco do plano gratuito é temporário: o banco `App_Data/courses.db` é recriado com a carga inicial a cada início, o que preserva os dados fictícios. No plano gratuito, o serviço hiberna após inatividade e a primeira requisição pode demorar. A disponibilidade e os limites dependem do provedor; confirme-os antes de publicar.
 
-Não há link de repositório nem de aplicação publicada nesta entrega. O SDK .NET 10 foi instalado neste ambiente, o build foi validado sem avisos e os endpoints principais passaram em testes HTTP locais. A publicação ainda precisa ser executada em uma plataforma escolhida.
+## Links
+
+- Repositório: https://github.com/vitorpilao/SESI-SENAI
+- Aplicação publicada: https://sesi-senai.onrender.com/
+
+## Script do banco e pacotes
+
+- `Database/courses.sql`: esquema e dados iniciais (equivalente ao criado automaticamente pela aplicação).
+- `CatalogoSesi-publicacao.zip`: arquivos de publicação (`dotnet publish`).
+- `CatalogoSesi-source.zip`: código-fonte e documentação.
+- [LIMITACOES.md](LIMITACOES.md): itens não concluídos e diferenças em relação ao Figma, com justificativas.
 
 ## Limitações conhecidas
+
+Consulte também [LIMITACOES.md](LIMITACOES.md).
 
 - O banco é inicializado por criação de esquema e carga inicial, sem ferramenta formal de migrations.
 - Não há gerenciamento de cursos, login, matrícula ou integração real com Moodle/AVA.
