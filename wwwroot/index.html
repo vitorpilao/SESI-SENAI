@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d00602">
+  <meta name="description" content="Conheça os cursos SESI Indústria e impulsione sua carreira.">
+  <title>Cursos SESI Indústria</title>
+  <link rel="icon" href="/assets/logo-sesi.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="SESI Indústria — início">
+        <img src="/assets/logo-sesi-industria-white.svg" alt="SESI Indústria">
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+        <span class="menu-icon" aria-hidden="true"></span>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+      <nav id="main-navigation" class="main-navigation" aria-label="Navegação principal">
+        <a href="#inicio">Início</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#sobre">Sobre</a>
+        <a class="nav-student" href="#area-do-aluno">Área do aluno</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">Aprender transforma</p>
+          <h1 id="hero-title">Impulsione<br>sua carreira<br>na indústria</h1>
+          <p class="hero-description">Amplie seus conhecimentos com excelência na melhor plataforma de estudos da indústria brasileira.</p>
+          <a class="button button-light" href="#cursos">Conhecer cursos <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="cursos" class="courses-section section-shell" aria-labelledby="courses-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Aprenda com quem entende</p>
+          <h2 id="courses-title">Principais cursos</h2>
+        </div>
+        <p class="section-intro">Formação de qualidade para acompanhar as transformações da indústria.</p>
+      </div>
+
+      <form id="course-filters" class="filter-panel" role="search">
+        <div class="search-field">
+          <label for="search">Encontre seu próximo curso</label>
+          <div class="input-with-icon">
+            <span class="search-icon" aria-hidden="true"></span>
+            <input id="search" name="search" type="search" placeholder="Pesquise pelo nome do curso" autocomplete="off">
+          </div>
+        </div>
+        <div class="filter-field">
+          <label for="category">Categoria</label>
+          <select id="category" name="category">
+            <option value="">Todas</option>
+            <option>Gestão</option>
+            <option>Matemática</option>
+            <option>Segurança</option>
+            <option>Sustentabilidade</option>
+            <option>Tecnologia</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="modality">Modalidade</label>
+          <select id="modality" name="modality">
+            <option value="">Todas</option>
+            <option>Híbrido</option>
+            <option>Online</option>
+            <option>Presencial</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="status">Status</label>
+          <select id="status" name="status">
+            <option value="">Todos</option>
+            <option>Em andamento</option>
+            <option>Em breve</option>
+            <option>Inscrições abertas</option>
+          </select>
+        </div>
+        <button id="clear-filters" class="clear-button" type="reset">Limpar filtros</button>
+      </form>
+
+      <div class="results-heading">
+        <p id="results-count" aria-live="polite" aria-atomic="true">Carregando cursos…</p>
+      </div>
+      <div id="course-results" class="course-grid" aria-busy="true"></div>
+      <div id="course-message" class="message-panel" role="status" hidden></div>
+    </section>
+
+    <section id="sobre" class="benefits-section section-shell" aria-labelledby="benefits-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Conhecimento que move o futuro</p>
+          <h2 id="benefits-title">Aprenda com o SESI</h2>
+        </div>
+      </div>
+      <div class="benefits-grid">
+        <article class="benefit">
+          <img src="/assets/01-certificacao-bege.svg" alt="" width="40" height="40">
+          <h3>Certificação SESI</h3>
+          <p>Cursos com a melhor certificação do mercado industrial, reconhecidos pelo SESI.</p>
+        </article>
+        <article class="benefit">
+          <img src="/assets/02-professores-bege.svg" alt="" width="40" height="40">
+          <h3>Professores especialistas</h3>
+          <p>Contamos com professores reconhecidos por sua excelência no mercado.</p>
+        </article>
+        <article class="benefit">
+          <img src="/assets/03-suporte-bege.svg" alt="" width="40" height="40">
+          <h3>Suporte contínuo</h3>
+          <p>Você não está sozinho: acompanhamento durante todo o curso.</p>
+        </article>
+        <article class="benefit">
+          <img src="/assets/04-flexibilidade-bege.svg" alt="" width="40" height="40">
+          <h3>Flexibilidade</h3>
+          <p>Turmas presenciais e online com horários que se adaptam à sua rotina.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="area-do-aluno" class="student-section">
+      <div class="student-content">
+        <div>
+          <p class="eyebrow eyebrow-light">Sua jornada continua</p>
+          <h2>Conhecimento para fazer acontecer.</h2>
+          <p>Explore nossos cursos e encontre a formação ideal para sua trajetória profissional.</p>
+        </div>
+        <a class="button button-light" href="#cursos">Explorar cursos <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section id="course-detail" class="detail-section section-shell" tabindex="-1" hidden aria-live="polite"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="brand brand-footer" href="#inicio" aria-label="SESI Indústria — voltar ao início">
+        <img src="/assets/logo-sesi-industria-white.svg" alt="SESI Indústria">
+      </a>
+      <p>Educação que transforma. Indústria que evolui.</p>
+      <small>Conteúdo demonstrativo com cursos e dados fictícios.</small>
+    </div>
+  </footer>
+</body>
+</html>
