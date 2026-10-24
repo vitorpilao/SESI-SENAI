@@ -10,7 +10,7 @@ Usado para analisar as instruções da atividade, consultar a referência Figma 
 
 ## Prompts relevantes
 
-- “Preciso criar essa plataforma conforme descrito no arquivo anexo, poderia me ajudar?”
+- “Preciso criar essa plataforma conforme descrito nas regras de negócio do arquivo anexo, poderia me ajudar?”
 - “Ajudar a implementar o catálogo de cursos solicitado, com API, filtros combináveis, detalhes e documentação.”
 
 ## O que foi aproveitado ou descartado
